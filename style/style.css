@@ -337,6 +337,13 @@
     justify-content: space-between;
 }
 
+.container-content-left-footer{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .sinister-img-sm{
     height: 30px;
     width: 30px;
@@ -345,9 +352,8 @@
 }
 
 .mini-text-footer{
-    width: 10%;
+    width: 50%;
     height: 100%;
-    padding-top: 1.2rem;
 }
 
 .h5-text-footer{
@@ -366,7 +372,7 @@
 
 .container-mini-icon-footer{
     height: 100%;
-    width: 10%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -389,10 +395,18 @@
     justify-content: space-between;
 }
 
+.container-for-dimensioning{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icon-play-bar{
     height: 100%;
     display: flex;
     align-items: center;
+    margin: 0 .5rem;
 }
 
 .reproduction-bar{
@@ -492,7 +506,6 @@
 
     .container-mini-icon-footer{
         flex-direction: row;
-        padding-right: 5rem;
     }
     
     .marg-bott{
@@ -503,7 +516,6 @@
     .container-play-bar{
         width: 25%;
         height: 100%;
-        margin-right: 10rem;
     }
 
     .container-volume-bar{

@@ -104,6 +104,10 @@
     display: none;
 }
 
+.h5-header:hover{
+    color: white;
+}
+
 .white{
     color: white;
 }
@@ -245,6 +249,10 @@
     padding-top: 1rem;
 }
 
+.h3-nav:hover{
+    color: white;
+}
+
 .h2-row{
     color: white;
     margin-top: 2rem;
@@ -267,6 +275,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: .3rem;
+    margin-left: .2rem;
+}
+
+.card:hover{
+    opacity: .5;
 }
 
 .align-self{
@@ -318,10 +331,10 @@
 
 .container-content-footer{
     height: 100%;
-    
     padding-left: 1rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .sinister-img-sm{
@@ -362,6 +375,45 @@
 
 .marg-bott{
     margin-bottom: 1rem;
+}
+
+.container-play-bar{
+    width: 35%;
+    height: 100%;
+}
+
+.container-icon-play-bar{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-play-bar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.reproduction-bar{
+    height: 10%;
+    width: 65%;
+    border-bottom: 3px solid #64676C;
+}
+
+.container-volume-bar{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+}
+
+.volume-bar{
+    height: 10%;
+    width: 40%;
+    border-bottom: 3px solid #64676C;
 }
 
 
@@ -428,13 +480,39 @@
 }
 
 @media screen and (min-width: 768px) {
+    
     .h3-nav{
         width: calc( 100% / 5 );
     }
-
+    
     .card{
         width: calc(( 100% / 4 ) - 2rem);
         margin: 0 .5rem;
+    }
+
+    .container-mini-icon-footer{
+        flex-direction: row;
+        padding-right: 5rem;
+    }
+    
+    .marg-bott{
+        margin-bottom: 0;
+        margin-right: .5rem;
+    }
+    
+    .container-play-bar{
+        width: 25%;
+        height: 100%;
+        margin-right: 10rem;
+    }
+
+    .container-volume-bar{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 1rem;
     }
 }
 

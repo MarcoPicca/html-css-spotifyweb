@@ -305,7 +305,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img:hover .overlay {
+    opacity: 1;
+  }
 
 .img-metal-lifting{
     height: 180px;
@@ -314,14 +333,13 @@
     object-position: center;
 }
 
-.container-play-over{
+.container-play-hover{
     width: 40px;
     height: 40px;
     display: none;
-    color: white;
 }
 
-.play-over{
+.play-hover{
     width: 40px;
     height: 40px;
     padding-left: .2rem;
@@ -332,9 +350,9 @@
     opacity: .5;
 }
 
-.img-cure:hover .container-play-over{
-       display: block;
-       
+.img-cure:hover .container-play-hover{
+    display: block;
+    color: white;
 }
 
 .img-cure{
